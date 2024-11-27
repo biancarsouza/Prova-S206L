@@ -30,9 +30,6 @@ cd S206
 - Confirme a importação.
 
 
-#### 3. 
-
-
 ### Cenários de Teste
 
 #### Postman:
@@ -47,9 +44,11 @@ cd S206
 
 #### Cypress:
 
--
--
--
+- Teste de registro do computador com sucesso.
+- Teste de delete do computador.
+- Teste de falha ao adicionar um computador com data de introdução posterior à data de descontinuação.
+- Teste de falha ao adicionar um computador com dados inválidos.
+- Teste de falha ao editar um computador com dados inválidos.
 
 
 ### Como executar os testes no Postman
@@ -60,6 +59,12 @@ cd S206
 
 ### Como executar os testes no Cypress
 
+- Em um arquivo base do cypress, importe o arquivo "prova_cypress.cy.js" para dentro da pasta e2e.
+- Execute o comando seguinte comando:
+``` git bash
+'./node_modules/.bin/cypress run --spec '"caminho para o arquivo"/**/''.
+```
+- Se preferir, pode abrir o HTML pronto presente na pasta "Mochawesome".
 
 ### Estrutura do repositório
 
